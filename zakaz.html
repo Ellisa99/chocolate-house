@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Lobster&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal_window hide">
+        <div class="modal">
+            <p class='close'>X</p>
+            <p>В данный моменнт сервер находится в доработке. Приносим извинения за доставленные неудобства.</p>
+        </div>
+    </div>
+
+    <div class='navigation'>
+        <div class="container">
+            <div class="navigation-block">
+                <div class='nav'>
+                    <a class='onmain' href="index.html">ГЛАВНАЯ</a>
+                    <a class='onmenu' href="index.html#menu">МЕНЮ</a>
+                    <a class='onzakaz' href="">ОНЛАЙН - ЗАКАЗ <i class="fas fa-shopping-cart hide"></i></a>
+                    <a class='oncontact' href="index.html#contact">КОНТАКЫ</a>
+                </div>
+                <div class="social">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cover">
+        <section class="main">
+            <div class="main_sec"></div>
+        </section>
+        <div class="container-2">
+            <section class="menu-vybor">
+                <div class="tabs">
+                    <p class='tab active'>Трюфели</p>
+                    <p class='tab'>Десерты</p>
+                </div>
+                <div class="menu__choose">
+                    <h2 class='men'>Меню</h2>
+                    <!-- <div class="hr"></div> -->
+                    <div class="truff click-menu">
+                        <h3>Трюфели</h3>
+                        <div class="img_vybor truff">
+                            <div class="vybor">
+                                <img src="img/tr1.jpg" alt="">
+                                <p>Трюфель из темного шоколада с орехами</p>
+                                <p>90 руб <i data-price='90' data-numb='tr1' class="fas plus fa-plus hide"></i> </p>
+                            </div>
+                            <div class="vybor">
+                                <img src="img/tr2.jpg" alt="">
+                                <p>Трюфель из белого шоколада с орехами</p>
+                                <p>90 руб <i data-price='90' data-numb='tr2' class="fas plus fa-plus hide"></i></p>
+                            </div>
+                            <div class="vybor">
+                                <img src="img/tr3.jpg" alt="">
+                                <p>Трюфель из молочного шоколада с карамелью</p>
+                                <p>90 руб <i data-price='90' data-numb='tr3' class="fas plus fa-plus hide"></i></p>
+                            </div>
+                            <div class="vybor">
+                                <img src="img/tr4.jpg" alt="">
+                                <p>Трюфель из темного шоколада с малиной</p>
+                                <p>90 руб <i data-price='90' data-numb='tr4' class="fas plus fa-plus hide"></i></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="click-menu des ">
+                        <h3>Десерты</h3>
+                        <div class="img_vybor des">
+                            <div class="vybor">
+                                <img src="img/des1.jpg" alt="">
+                                <p>Карамельно-банановый десерт</p>
+                                <p>90 руб <i data-price='90' data-numb='ch1' class="fas plus fa-plus hide"></i> </p>
+                            </div>
+                            <div class="vybor">
+                                <img src="img/des2.jpg" alt="">
+                                <p>Печенье с ванильным кремом</p>
+                                <p>90 руб <i data-price='90' data-numb='ch2' class="fas plus fa-plus hide"></i></p>
+                            </div>
+                            <div class="vybor">
+                                <img src="img/des3.jpg" alt="">
+                                <p>Черно-белое сердце</p>
+                                <p>90 руб <i data-price='90' data-numb='ch3' class="fas plus fa-plus hide"></i></p>
+                            </div>
+                            <div class="vybor">
+                                <img src="img/des4.jpg" alt="">
+                                <p>Плитка шоколада с золотыми фисташками</p>
+                                <p>90 руб <i data-price='90' data-numb='ch4' class="fas plus fa-plus hide"></i></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz">
+                    <p class="your_order"> Ваш заказ:</p>
+                    <p class='summ'>Сумма:</p>
+                    <button data-del="clearZak" class='send' type="submit">Заказать сейчас</button>
+                </div>
+                <div class="thanksWind hide">
+                </div>
+            </section>
+
+        </div>
+
+        <section class="footer">
+            <p>Напишите Юридический адрес вашей организации</p>
+        </section>
+    </div>
+
+
+
+
+
+    <script defer src="js/bundle.js"></script>
+</body>
+
+</html>
